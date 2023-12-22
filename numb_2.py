@@ -19,6 +19,7 @@ def name_change(past_name: str, new: str, file_types: List[str]) -> None:
                 writer.writerow([os.path.join(absolute_path, new_name),
                                  os.path.join(relative_path, new_name), file_type])
 
+
                 
 
 
