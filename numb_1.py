@@ -4,7 +4,10 @@ from typing import List
 
 
 def get_absolute_path(class_img: str ) -> List[str]:
-    
+    '''
+    возвращает список абсолютных путей к изображениям 
+    заданного класса в указанной директории.
+    '''
     abs_path = os.path.abspath("dataset_1") 
     class_path = os.path.join(abs_path, class_img) 
     image_names = os.listdir(class_path) 
@@ -14,7 +17,10 @@ def get_absolute_path(class_img: str ) -> List[str]:
 
 
 def get_relative_path(class_img: str) -> List[str]:
-   
+    '''
+    возвращает список относительных путей к изображениям 
+    заданного класса в указанной директории.
+    '''
     rel_path = os.path.relpath("dataset_1")
     class_path = os.path.join(rel_path, class_img)
     image_names = os.listdir(class_path)

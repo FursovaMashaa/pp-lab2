@@ -5,7 +5,9 @@ from typing import List
 
 
 def name_change(past_name: str, new: str, file_types: List[str]) -> None:
-    
+    '''
+    переименовывает файлы в указанной директории и копирует их в новую директорию.
+    '''
     absolute_path = os.path.abspath(new)
     relative_path = os.path.relpath(new)
     for file_type in file_types:

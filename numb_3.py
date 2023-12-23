@@ -5,6 +5,10 @@ from random import sample
 
 
 def copy_dataset_with_random_numbers(past_name: str, new: str) -> None:
+    '''
+    копирует изображения из старой директории в новую директорию ,
+    добавляя случайное число из диапазона от 0 до 9999 в качестве имени файла.
+    '''
     absolute_path = os.path.abspath(new)
     relative_path = os.path.relpath(new)
     random_number = sample(range(0, 10000), 1988)
